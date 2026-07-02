@@ -45,6 +45,7 @@
 
   /* ---------- HEADER ---------- */
   header{
+    position:-webkit-sticky;
     position:sticky;
     top:0;
     z-index:100;
@@ -365,9 +366,25 @@
 
   @media (max-width:600px){
     .wrap{padding:0 20px;}
+    header{
+      top:0;
+      left:0;
+      right:0;
+    }
     .header-inner{height:68px;}
-    .brand-name{font-size:14.5px;max-width:170px;}
+    .brand{gap:10px;}
+    .brand-name{
+      font-size:13.5px;
+      line-height:1.08;
+      max-width:152px;
+    }
+    .brand-name span{
+      font-size:8.5px;
+      letter-spacing:.06em;
+      margin-top:2px;
+    }
     .seal{width:38px;height:38px;font-size:13px;}
+    .header-actions .phone-link{display:none;}
     .hero h1{font-size:clamp(26px,7vw,34px);}
     .hero p.lead{font-size:15.5px;}
     .hero-ctas{gap:12px;}
